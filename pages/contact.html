@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/styleform.css">
+      <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+
+      <div class="container">
+        <form class="contact-form" id="contactForm">
+            <h1>Contact me</h1>   
+            <div class="two-columns">
+                <div class="form-group">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company*</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+            </div>
+            
+            <div class="two-columns">
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone - Movil</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="language">Preferred Language*</label>
+                <select id="language" name="language" required>
+                    <option value="">Seleccione un idioma</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="fr">Francés</option>
+                    <option value="de">Alemán</option>
+                    <option value="pt">Portugués</option>
+                    <option value="it">Italiano</option>
+                    <option value="other">Otro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Menssage* (máx 2000 caracters)</label>
+                <textarea id="message" name="message" maxlength="2000" required></textarea>
+                <div class="char-counter"><span id="charCount">0</span>/2000 caracters</div>
+            </div>            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+
+    
+    <script>
+     // Contador de caracteres
+    const message = document.getElementById('message');
+    const charCount = document.getElementById('charCount');
+    
+    message.addEventListener('input', function() {
+        const currentLength = this.value.length;
+        charCount.textContent = currentLength;
+        
+        if (currentLength > 1800) {
+            charCount.style.color = '#e74c3c';
+        } else {
+            charCount.style.color = '#7f8c8d';
+        }
+    });
+    
+    // Manejo del envío del formulario
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Eliminar alertas anteriores si existen
+        const existingAlert = document.querySelector('.custom-alert');
+        if (existingAlert) {
+            existingAlert.remove();
+        }
+        
+        // Crear la alerta personalizada
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'custom-alert';
+        alertDiv.innerHTML = `
+            <svg viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+            <div>
+                Form successfully submitted. Thank you for your message!
+            </div>
+        `;
+        
+        // Insertar la alerta después del formulario
+        this.parentNode.insertBefore(alertDiv, this);
+        
+        // Forzar reflow para que la animación funcione
+        void alertDiv.offsetWidth;
+        
+        // Mostrar la alerta con animación
+        alertDiv.classList.add('show');
+        
+        // Resetear el formulario
+        this.reset();
+        if (charCount) {
+            charCount.textContent = '0';
+            charCount.style.color = '#7f8c8d';
+        }
+        
+        // Eliminar la alerta después de 5 segundos
+        setTimeout(() => {
+            alertDiv.classList.remove('show');
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 300); // Tiempo para que termine la animación de salida
+        }, 5000);
+    });
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #101820;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #101820, #16232f);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00d4ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #00d4ff;
+    }
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill {
+      background: #16232f;
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .skill:hover {
+      transform: translateY(-5px);
+    }
+    .code-showcase {
+      display: grid;
+      gap: 30px;
+    }
+    pre {
+      background: #1c2a36;
+      padding: 20px;
+      border-radius: 12px;
+      overflow-x: auto;
+      color: #f8f8f2;
+      font-family: "Fira Code", monospace;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #16232f;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  

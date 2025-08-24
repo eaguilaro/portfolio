@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAO Startup</title>
+    <!-- CSS de Bootstrap 5 -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/favicon.svg" alt="EAO Logo" />
+        <span>PORTOLIO</span>
+      </div>
+      <button
+        class="botones-header btn btn-primary"
+        onclick="window.open('pages/contact.html', '_blank')"
+      >
+        Let’s Talk
+      </button>
+    </nav>
+
+    <div class="container">
+      <div class="mt-5 mod-spacing">
+        <p class="heading">Hi, I am</p>
+        <p class="heading-1">Edinson Aguilar O.</p>
+        <p class="heading-desarrollador">Web Developer</p>
+        <p class="heading-slogan">
+          Technology innovator, driver of real solutions, and passionate about
+          creating positive impact.
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-around pt-3">
+        <div>
+          <a href="#projects" class="botones-header btn btn-primary">
+            My Projects
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-right"
+              class="svg-inline--fa fa-arrow-right ms-3"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a
+            href="documents/Edinson Aguilar Ospina - CV.pdf"
+            rel="noreferrer"
+            target="_blank"
+            item="header.button-curriculum"
+            class="botones-header btn btn-primary"
+            >Resume
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="floppy-disk"
+              class="svg-inline--fa fa-floppy-disk ms-3"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M433.1 129.1l-83.9-83.9C342.3 38.32 327.1 32 316.1 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V163.9C448 152.9 441.7 137.7 433.1 129.1zM224 416c-35.34 0-64-28.66-64-64s28.66-64 64-64s64 28.66 64 64S259.3 416 224 416zM320 208C320 216.8 312.8 224 304 224h-224C71.16 224 64 216.8 64 208v-96C64 103.2 71.16 96 80 96h224C312.8 96 320 103.2 320 112V208z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center pt-4 pt-md-5">
+        <a href="" target="_blank" rel="noreferrer">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="instagram"
+            class="svg-inline--fa fa-instagram fa-3x ms-3 pt-3 pt-sm-0 anchore"
+            role="img"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            ></path></svg></a
+        ><a href="https://github.com/eaguilaro" target="_blank" rel="noreferrer"
+          ><svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="github"
+            class="svg-inline--fa fa-github fa-3x ms-5 pt-3 pt-sm-0 anchore"
+            role="img"
+            viewBox="0 0 496 512"
+          >
+            <path
+              fill="currentColor"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path></svg></a
+        ><a
+          href="https://www.linkedin.com/in/eaguilaro/"
+          target="_blank"
+          rel="noreferrer"
+          ><svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fab"
+            data-icon="linkedin-in"
+            class="svg-inline--fa fa-linkedin-in fa-3x ms-5 pt-3 pt-sm-0 anchore"
+            role="img"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+            ></path></svg
+        ></a>
+      </div>
+    </div>
+    <br />
+
+    <div class="pt-md-5 container">
+      <h1 class="text-center heading text-white">About Me</h1>
+      <!-- Añadido text-white -->
+      <br />
+      <br />
+      <div class="row">
+        <!-- Columna del acordeón (izquierda) -->
+        <div class="col-lg-6 order-lg-1 order-2">
+          <!-- Cambiado el orden para mobile -->
+          <div
+            class="accordion transparent-accordion"
+            id="accordionPanelsStayOpenExample"
+          >
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Introducing Myself
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body text-white">
+                  I’m <strong>Edinson Aguilar Ospina,</strong> a professional
+                  passionate about technology, innovation, and turning ideas
+                  into tangible results. My journey blends technical expertise,
+                  strategic thinking, and the ability to adapt to diverse
+                  environments and challenges. I strongly believe that every
+                  project is an opportunity to learn, grow, and make a positive
+                  impact—whether by optimizing processes, developing digital
+                  tools, or leading initiatives that inspire change. With a
+                  forward-looking vision and a constant commitment to
+                  excellence, I move ahead with the conviction that knowledge,
+                  creativity, and perseverance are the keys to building a better
+                  tomorrow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Personal Description
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body text-white">
+                  I am a mature 50-year-old man with a deep passion for sports,
+                  ecology, and history—values that connect me with the nature
+                  and rich diversity that define Australia. My family—my wife
+                  and daughter—is the foundation that drives me forward,
+                  learning and growing every day in this new country that has
+                  welcomed us with open arms. Although we are still students, we
+                  value the effort, perseverance, and resilience required to
+                  build a better life and contribute positively to the community
+                  that embraces us. Our commitment is to integrate, respect the
+                  environment, and build a solid future, with the conviction
+                  that every step taken in Australia is an opportunity to grow
+                  and prosper together.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Goals and Objetives
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body text-white">
+                  My goal is to belong to a company that values not only my
+                  technical knowledge but also my continuous ability to learn
+                  and adapt in any environment. I seek to be recognized for my
+                  human qualities, commitment, and work ethic, contributing with
+                  projects that generate real and positive impact for the
+                  organization. I aspire to develop my own initiatives that
+                  reflect my passion and creativity, with personal and
+                  professional meaning. I want to build a career that allows me
+                  to live peacefully, being the solid support for my family and
+                  a leadership role model within the company. I see myself as a
+                  great leader, capable of inspiring teams, making sound
+                  decisions, and guiding projects toward success, always with a
+                  forward-looking vision and social responsibility.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion-button collapsed bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Hobbies & Interests
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body text-white">
+                  I enjoy continuous learning, particularly exploring history
+                  and politics, as they help me see the world from different
+                  perspectives. Sports play an important role in my
+                  life—especially football—and I value spending quality time
+                  watching movies with my wife and daughter. I also appreciate
+                  the outdoors, whether it’s walking along scenic trails or
+                  enjoying a peaceful day in nature.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna de la imagen (derecha) -->
+        <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+          <!-- Cambiado el orden para mobile -->
+          <div class="text-center pt-4 pt-lg-0">
+            <div class="rounded">
+              <img
+                alt="profile"
+                src="/assets/475204217_10162216552593058_3584612250389375148_n.jpg"
+                class="img-fluid"
+                width="300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-md-5 container">
+      <!-- Añadido text-white -->
+      <div class="row">
+        <h1 class="container text-center pb-3">Education</h1>
+        <div class="col-lg-6 col-12">
+          <div class="pt-3 container text-center">
+            <div class="carta pb-5 pt-5">
+              <p class="color-time">2025-2027</p>
+              <h5>Diploma in web development and Design</h5>
+              <h6 class="pt-3">Laneway Institud - Actally</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="pt-3 container text-center">
+            <div class="carta pb-5 pt-5">
+              <p class="color-time">2009-2012</p>
+              <h5>Tecnology and Computer Science</h5>
+              <h6 class="pt-3">Center Colombian of Study Profesionals</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="pt-3 container text-center">
+            <div class="carta pb-5 pt-5">
+              <p class="color-time">1998-2000</p>
+              <h5>Industrial Enginner</h5>
+              <h6 class="pt-3">Autonama University</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="pt-3 container text-center">
+            <div class="carta pb-5 pt-5">
+              <p class="color-time">1995-1998</p>
+              <h5>Tecnology an Industrial Enginner</h5>
+              <h6 class="pt-3">Center Colombian of Study Profesionals</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-md-5 container">
+      <h1 class="container text-center pb-3">Experience</h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Entelso PTY - Australia</strong>
+              </h5>
+              <p class="card-text">
+                <strong>IT Tech Leader | 2+ Years </strong>Designed and
+                developed the company's core technology platform, built the
+                entire software lifecycle, and managed the IT infrastructure.
+              </p>
+              <a
+                href="https://www.entelso.com.au/"
+                class="btn btn-primary"
+                target="_blank"
+                >Go Website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><strong>SIO SAS - Colombia </strong></h5>
+              <p class="card-text">
+                <strong> Product Owner | 18+ Years </strong>Bridging Software
+                Development & Business Needs Transform user stories into
+                high-impact solutions that drive customer success.
+              </p>
+              <a
+                href="https://sio.com.co/"
+                class="btn btn-primary"
+                target="_blank"
+                >Go Website</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Transit services programm </strong>
+              </h5>
+              <p class="card-text">
+                <strong> Operations Coordinator | 18+ Years </strong>Implement
+                work methodologies, document production programmes, and controls
+                for continuous improvement within the company.
+              </p>
+              <a
+                href="https://serviciosdetransito.com/pst/"
+                class="btn btn-primary"
+                target="_blank"
+                >Go Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="pt-md-5 container">
+      <h1 class="text-center heading text-white">Proyects</h1>
+      <br />
+      <br />
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <a
+            href="../pages/experience.html#smartflow-project"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="card">
+              <img src="assets/preview.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title"><strong>SmartFlow</strong></h5>
+                <p class="card-text justify-text">
+                  Task management and monitoring platform built with Laravel,
+                  Vue.js, and MySQL, seamlessly integrated with Microsoft 365,
+                  enabling automated email notifications for project progress
+                  updates, team collaboration, and efficient tracking.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="../pages/experience.html#healthhistory-project"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="card">
+              <img
+                src="assets/Health_resized.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title"><strong>Health History</strong></h5>
+                <p class="card-text justify-text">
+                  Developed a secure EHR and medical billing platform for
+                  hospitals, automated invoicing. Collaborated with a Senior
+                  Product Consultant to align features with healthcare
+                  standards. Tech stack: Vue.js (frontend), Oracle (database),
+                  JavaScript.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="../pages/experience.html#budgetcap-project"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="card">
+              <img src="assets/Budget.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Budget Cap</h5>
+                <p class="card-text justify-text">
+                  Control panel for billing and productivity monitoring in
+                  service sales. Developed with the following technology stack:
+                  Vue.js (frontend), Oracle (database), JavaScript, which
+                  provides real-time tracking and information on performance.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a
+            href="../pages/experience.html#healthquality-project"
+            target="_blank"
+            style="text-decoration: none; color: inherit"
+          >
+            <div class="card">
+              <img
+                src="assets/HealthSQ_resized.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Health Quality</h5>
+                <p class="card-text justify-text">
+                  Application for healthcare providers focused on quality
+                  management and continuous improvement, aligned with ISO 9001
+                  and Australian healthcare accreditation standards, enhancing
+                  processes, patient safety, institutional efficiency.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel de Tecnologías -->
+    <div class="pt-md-5 container">
+      <h1 class="text-center heading text-white">Skills</h1>
+      <a href="../pages/skill.html" class="btn btn-primary">ir</a>
+      <br />
+      <div class="tech-carousel">
+        <div class="tech-slider">
+          <!-- Oracle -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+            class="tech-icon"
+            alt="Oracle"
+            title="Oracle"
+          />
+          <!-- MySQL -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            class="tech-icon"
+            alt="MySQL"
+            title="MySQL"
+          />
+          <!-- SQL Server -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+            class="tech-icon"
+            alt="SQL Server"
+            title="SQL Server"
+          />
+          <!-- Vue.js -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+            class="tech-icon"
+            alt="Vue.js"
+            title="Vue.js"
+          />
+          <!-- Node.js -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            class="tech-icon"
+            alt="Node.js"
+            title="Node.js"
+          />
+          <!-- HTML5 -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="tech-icon"
+            alt="HTML5"
+            title="HTML5"
+          />
+          <!-- JavaScript -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="tech-icon"
+            alt="JavaScript"
+            title="JavaScript"
+          />
+          <!-- Git -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            class="tech-icon"
+            alt="Git"
+            title="Git"
+          />
+          <!-- Bootstrap -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            class="tech-icon"
+            alt="Bootstrap"
+            title="Bootstrap 5"
+          />
+
+          <!-- Duplicados para efecto de loop infinito -->
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+            class="tech-icon"
+            alt="Oracle"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            class="tech-icon"
+            alt="MySQL"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+            class="tech-icon"
+            alt="SQL Server"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+            class="tech-icon"
+            alt="Vue.js"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            class="tech-icon"
+            alt="Node.js"
+            title="Node.js"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="tech-icon"
+            alt="HTML5"
+            title="HTML5"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="tech-icon"
+            alt="JavaScript"
+            title="JavaScript"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            class="tech-icon"
+            alt="Git"
+            title="Git"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            class="tech-icon"
+            alt="Bootstrap"
+            title="Bootstrap 5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+  </body>
+</html>

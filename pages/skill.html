@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styleskill.css">
+  <title>Portafolio - Edinson Aguilar</title>
+  
+  
+</head>
+<body>
+  <header>
+    <h1>Edinson Aguilar</h1>
+    <p>Full Stack Developer | Vue.js - Laravel - Vuetify - MySQL - HTML - CSS</p>
+  </header>
+
+  <section>
+    <h2>Mis Skills</h2>
+    <div class="skills">
+      <div class="skill">⚡ Vue.js</div>
+      <div class="skill">⚙️ Laravel</div>
+      <div class="skill">🎨 Vuetify</div>
+      <div class="skill">🗄️ MySQL</div>
+      <div class="skill">🌐 HTML</div>
+      <div class="skill">🎭 CSS</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Code Showcase</h2>
+    <div class="code-showcase">
+      <pre><code>// Vue.js - Create Task validation
+CreateTask(task) {
+  if(this.task.order.trim() === ""){
+    this.AlertError("Num Order cannot be empty");
+    return;
+  }
+  if(this.task.sitename.trim() === ""){
+    this.AlertError("Site name cannot be empty");
+    return;
+  }
+  ...
+}</code></pre>
+
+      <pre><code>&lt;v-col cols="12" sm="3" md="3"&gt;         
+  &lt;v-select
+    v-show="administrador == 1"
+    v-model="SelectUser"
+    :items="Usuarios"
+    item-value="id"
+    item-text="name"
+    label="User Proyect"
+    :rules="[(v) =&gt; !!v || 'Item is required']"
+    placeholder="Select User"
+    required
+    outlined
+    dense
+    prepend-icon="mdi-account"
+    hide-details&gt;
+  &lt;/v-select&gt;
+&lt;/v-col&gt;</code></pre>
+
+      <pre><code>// Laravel - Report Task Closed
+public function rptTaskClosed($dateI,$dateF) { 
+  $rptClosed = DB::table('proyects as p')
+    ->select(DB::raw('DATE(p.datefinish) AS dia'),
+             DB::raw('COUNT(DISTINCT p.id) AS cantidad'),
+             'clientes.id','clientes.cliente','p.idtipo','p.project_id')
+    ->join('clientes', 'p.cliente_id', '=', 'clientes.id')
+    ->join('notatareas as n', 'p.id', '=', 'n.idtarea')
+    ->whereBetween('p.datefinish', [$dateI, $dateF])
+    ->where('p.anulado','=' , '0')  
+    ->groupBy(DB::raw('DATE(p.datefinish)'),'clientes.id','clientes.cliente','p.idtipo')
+    ->orderBy(DB::raw('DATE(p.datefinish)'));
+    
+  if(auth()->user()->role_id == 3 || auth()->user()->role_id == 4) {
+    $rptClosed->where('clientes.id', '=', auth()->user()->cliente_id);               
+  } 
+  return $rptClosed->get();
+}</code></pre>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Edinson Aguilar | Contacto: tuemail@correo.com</p>
+  </footer>
+</body>
+</html>
